@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/sytle.css" />
+  <title>Picorey</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar py-3 navbar-expand-lg fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active text-gradient" aria-current="page" href="#hero">Picorey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tienda">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recetas">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto">
+            <h1 class="display-1 fw-bold text-white">
+              ¡BOTAS QUE SE <span>ANTOJAN</span>!
+            </h1>
+            <div class="d-inline-flex py-3">
+              <a href="#" class="bg-white text-black rounded-0 py-1 px-3 fw-bold me-2">DESDE</a>
+              <a href="#" class="bg-white rounded-0 py-1 px-4 fw-bold">1976</a>
+            </div>
+
+            <p class="lead fw-semibold">
+              ¡Bienvenido a Picorey! Donde cada bocado es una fiesta de sabor
+              <span>yucateco</span>.
+            </p>
+            <a href="#" class="btn btn-next btn-lg mt-4">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img class="logo-picorey" src="/assets/img/logo.png" alt="Logo Picorey" />
+          </div>
+        </div>
+      </div>
+      <img class="img-products" src="/assets/img/productos.webp" alt="Productos Picorey" />
+    </section>
+
+    <section id="nosotros" class="nosotros">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 vh-100 d-flex align-items-center justify-content-center">
+            <div class="content" data-aos="fade-right">
+              <h2 class="text-center mb-4 text-uppercase ">Nosotros</h2>
+              <p class="fs-4" style="text-align: justify;">
+                Comercializadora Picorey es una empresa mexicana que distribuye productos hechos en México por toda la
+                Península de Yucatán, brindando empleo a más de 500 personas.
+              </p>
+              <p class="fs-4" style="text-align: justify;">
+                Al mismo tiempo nuestra marca, asociada con bellos recuerdos de la infancia y el legado de felicidad a
+                nuevas generaciones, buscan satisfacer las necesidades de más de 20 mil clientes registrados y cientos
+                de
+                miles de consumidores.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center">
+            <div class="content" data-aos="fade-left">
+              <img class="img-fluid" src="/assets/img/nosotros.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tienda" class="tienda d-flex">
+      <div class="container m-auto">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card hover-move" style="width: 16rem; cursor: pointer;">
+              <div class="box-img hover-img mb-3" data-bs-toggle="modal" data-bs-target="#productModal">
+                <img src="/assets/img/1.png" class="img-fluid" alt="chicharron_cerdo">
+              </div>
+              <a href="#" class="btn btn-primary btn-producto" data-bs-toggle="modal"
+                data-bs-target="#productModal">Porky´s</a>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card hover-move" style="width: 16rem;">
+              <div class="box-img hover-img mb-3">
+                <img src="/assets/img/2.png" class="img-fluid" alt="charritos">
+              </div>
+              <a class="btn btn-primary btn-producto" style="cursor: default;">Charritos</a>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card hover-move" style="width: 16rem;">
+              <div class="box-img hover-img mb-3">
+                <img src="/assets/img/3.png" class="img-fluid" alt="chiwiz_torciditos">
+              </div>
+              <a class="btn btn-primary btn-producto" style="cursor: default;">Chiwiz Torciditos</a>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card hover-move" style="width: 16rem;">
+              <div class="box-img hover-img mb-3">
+                <img src="/assets/img/4.png" class="img-fluid" alt="charritos">
+              </div>
+              <a class="btn btn-primary btn-producto" style="cursor: default;">Palomitas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body d-flex align-items-center">
+
+              <div class="col-md-5 text-center p-3">
+                <div class="box-img">
+                  <img src="/assets/img/1.png" class="img-fluid" alt="chicharron_cerdo">
+                </div>
+              </div>
+
+              <div class="col-md-7 p-4 position-relative "
+                style="background: #FFE502; color: #000; border-radius: 20px;">
+                <h4 class="fw-bold text-uppercase">Porky´s</h4>
+                <p class="fw-semibold" style="color: red;">¡Crujiente placer con Porky´s!</p>
+                <p>Disfruta del auténtico chicharrón de cerdo 100% natural. Disponible en presentaciones de <span
+                    class="fw-semibold" style="color: red;">200g, 130g,
+                    70g y 20g.</span></p>
+                <p class="small">¡Perfecta para botanear, compartir o darte un gusto en cualquier momento!</p>
+                <a type="button" class="btn btn-cerrar position-absolute" style="right: 0;" data-bs-dismiss="modal">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recetas" class="recetas">
+      <div class="container-fluid p-0">
+        <div class="bg-recetas">
+          <div class="row">
+            <div class="col-md-7 d-none d-md-block" data-aos="fade-right">
+              <img class="img-fluid" src="/assets/img/recetas.png" alt="banner_recetas">
+            </div>
+            <div class="col-md-5 m-auto" data-aos="fade-left">
+              <h2 class="text-white text-uppercase fw-bold" style="letter-spacing: 5px; font-size: 100px;">Recetas</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="otras-recetas">
+        <div class="row mt-4 p-4 d-flex justify-content-center align-items-center">
+          <div class="col-md-3" data-aos="fade-up">
+            <img src="/assets/img/p1.jpg" class="img-fluid" alt="Porky's en Salsa Verde">
+            <p class="text-center">Porky's en Salsa Verde</p>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <img src="/assets/img/p2.jpg" class="img-fluid" alt="Charritos con jamón y queso">
+            <p class="text-center">Charritos con jamón y queso</p>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <img src="/assets/img/p3.jpg" class="img-fluid" alt="Picorrones Preparados">
+            <p class="text-center">Picorrones Preparados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class=" contacto">
+
+      <div class="container-fluid p-0">
+        <div class="bg-contacto">
+        </div>
+      </div>
+
+      <div class="container p-4 ">
+        <div class="row">
+          <div class="col-md-6">
+
+            <h2 class="fw-bold display-2 text-uppercase" style="color: #FB912B;">Contacto</h2>
+            <hr class="custom-hr">
+
+            <p class="fs-3">Para Picorey, conocer tu opinión es importante.</p>
+
+            <p class="text-uppercase"><strong>Información:</strong></p>
+            <p><i class="fas fa-phone-alt" style="transform: scaleX(-1);"></i> 9999 30 21 00</p>
+            <p><i class="fas fa-envelope"></i> serviciocliente@picorey.com.mx</p>
+            <p><i class="fas fa-clock"></i> Lun-Vie: 09AM-05PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle 21, Cholul, Mérida, Yucatán, México 97305</p>
+          </div>
+          <div class="col-md-6 m-auto">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control" placeholder="Correo electrónico">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Teléfono">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Mensaje" rows="6"></textarea>
+              </div>
+
+              <div class="mb-3 d-flex justify-content-end">
+                <button type="submit" class="btn btn-warning w-25">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <footer class="footer text-white py-4">
+      <div class="container text-center">
+        <p>Síguenos en nuestras redes sociales</p>
+        <div>
+          <a href="https://www.facebook.com/BotanasPicorey" target="_blank" class="text-white mx-3">
+            <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/picoreyoficial/" target="_blank" class="text-white mx-3">
+            <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="mt-3">&copy; 2025 Picorey. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/scripts.js"></script>
+
+
+  </div>
+</body>
+
+</html>
